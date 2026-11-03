@@ -597,3 +597,12 @@ h1 .red { color: var(--brand-red); text-shadow: 0 0 40px rgba(255,43,43,.28); }
 /* Hero: logo already shown in header, so show the accent line instead */
 .hero-kicker { margin-bottom: 1.5rem; }
 .hero-kicker .eyebrow::before { display: inline-block; }
+
+/* Buttons: don't inherit the browser's default (white) <button> background */
+button.btn { appearance: none; -webkit-appearance: none; }
+.btn-ghost { background: transparent; }
+.btn-ghost:hover { background: rgba(34,211,238,.08); }
+.view-btn {
+  background: rgba(47,123,255,.14); border-color: rgba(79,149,255,.6); color: #fff;
+}
+.view-btn:hover { background: var(--brand); border-color: var(--brand); color: #fff; }

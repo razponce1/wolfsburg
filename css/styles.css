@@ -630,3 +630,7 @@ button.btn { appearance: none; -webkit-appearance: none; }
 @media (min-width: 1024px) { .map-wrap iframe { height: 20rem; } }
 .map-actions { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1rem; }
 .map-actions .btn { gap: 0.4rem; }
+
+/* Contact form: fit its content instead of stretching to the left column */
+.contact-grid .form { align-self: start; }
+@media (min-width: 1024px) { .contact-grid .form { position: sticky; top: 6rem; } }

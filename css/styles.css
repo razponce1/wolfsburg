@@ -606,3 +606,16 @@ button.btn { appearance: none; -webkit-appearance: none; }
   background: rgba(47,123,255,.14); border-color: rgba(79,149,255,.6); color: #fff;
 }
 .view-btn:hover { background: var(--brand); border-color: var(--brand); color: #fff; }
+
+/* Product image tiles: subtle border, brighter on hover */
+.product-imgs figure {
+  border: 1px solid rgba(79,149,255,.45);
+  box-shadow: none;
+  transition: border-color .25s, box-shadow .25s, transform .25s;
+}
+.product-imgs figure:hover {
+  border-color: var(--cyan);
+  box-shadow: 0 0 0 1px rgba(34,211,238,.35), 0 10px 26px rgba(34,211,238,.18);
+  transform: translateY(-2px);
+}
+.product-imgs figcaption { border-top-color: rgba(79,149,255,.25); }
